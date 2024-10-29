@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="managment.php" method="post">
+        <label for="nome"> Nome: </label> <br>
+        <input type="text" name="nome" required> <br>
+        <label for="cognome"> Cognome: </label> <br>
+        <input type="text" name="cognome" required> <br>
+        <label for="tavolo"> Numero del tavolo: </label>
+        <select name="tavolo">
+            <option value="1"> 1 </option>
+            <option value="2"> 2 </option>
+            <option value="3"> 3 </option>
+            <option value="4"> 4 </option>
+            <option value="5"> 5 </option>
+        </select> <br>
+        <label for="orario"> Orario: </label>
+        <input type="time" name="orario" required> <br>
+        <label for="note"> Note: </label> <br>
+        <textarea name="note" rows="4" cols="25"></textarea> <br>
+        <label for="portate"> Portate: </label> <br>
+        <input type="checkbox" name="portate[]" value="antipasto"> Antipasto <br>
+        <input type="checkbox" name="portate[]" value="primo"> Primo <br>
+        <input type="checkbox" name="portate[]" value="secondo"> Secondo <br>
+        <label for="parcheggio"> Parcheggio: </label> <br>
+        <input type="radio" name="parcheggio" value="custodito" required> Parcheggio custodito <br>
+        <input type="radio" name="parcheggio" value="non_custodito" required> Parcheggio non custodito <br>
+        <input type="radio" name="parcheggio" value="no_parcheggio" required> Non usufruisco del parcheggio <br>
+        <hr>
+        <button type="submit"> INVIA </button>
+    </form>
+</body>
+
+</html>
